@@ -5,6 +5,9 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  void answerQuestion(){
+    print('Answer chosen!');
+  }
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
@@ -16,15 +19,15 @@ class MyApp extends StatelessWidget {
               Text('This is body part!'),
               RaisedButton(
                 child: Text('Answer1'),
-                onPressed: null,
+                onPressed: answerQuestion,
               ),
               RaisedButton(
                 child: Text('Answer2'),
-                onPressed: null
+                onPressed: answerQuestion,
               ),
               RaisedButton(
                 child: Text('Answer3'),
-                onPressed: null
+                onPressed: answerQuestion,
               ),
             ]
           )
